@@ -55,7 +55,7 @@ void setup() {
 	//Clear all leds
 	Wire.beginTransmission(DEVICE_ADDRESS);
 	Wire.write(ADDR_AI2_bm | REG_PWM0);
-	for(int i = 0; i < 4; i++); //set all LEDS to 0
+	for(int i = 0; i < 4; i++) //set all LEDS to 0
 		Wire.write(0);
 	Wire.write(255); //set group DTC to 100%
 	Wire.endTransmission();
