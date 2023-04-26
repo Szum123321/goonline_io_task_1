@@ -1,5 +1,7 @@
 #include <Arduino.h>
 
+//Definitions of all the constants necessary for interaction with PCA9633PW(https://www.nxp.com/part/PCA9633PW#/)
+
 #define SWRST_ADDR 0x03
 #define SWRST_MAGIC1 0xA5
 #define SWRST_MAGIC2 0x5A
@@ -21,8 +23,8 @@
 
 #define REG_MODE2 0x01
 
-#define MODE2_OUTEN0_bm 0x01
-#define MODE2_OUTEN1_bm 0x02
+#define MODE2_OUTNE0_bm 0x01
+#define MODE2_OUTNE1_bm 0x02
 #define MODE2_OUTDRV_bm 0x04
 #define MODE2_OCH_bm 0x08
 #define MODE2_INVRT_bm 0x10
